@@ -1,28 +1,150 @@
 :root {
   --header-color: #ffffff;
+  --line-header-color: #ececec;
+  --logo-color: #000000;
+  --second-logo-color: #ffffff;
+  --accent-color: #2196f3;
+  --second-accent-color: #2f303a;
+  --third-accent-color: #f5f4fa;
+  --primary-text-color: #212121;
+  --second-text-color: #757575;
 }
-
 .body {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 146%;
   background-color: #ffffff;
-  color: #757575;
 }
 
-ul {
+.list {
   list-style: none;
 }
 
-.body-logo {
-  color: #2196f3;
+.link {
+  text-decoration: none;
+}
+/*------------------------НЕ ВЫХОДИТ???????--------------*/
+.main-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
+}
+.btn:hover,
+.btn:focus {
+  color: var(--second-logo-color);
+}
+.btn-blue {
+  background: var(--header-color);
+  border-radius: 4px;
+}
+.btn-blue:hover,
+.btn-blue:focus {
+  background: var(--accent-color);
 }
 
-.contact :hover,
-.contact :focus {
-  color: #2196f3;
+/*-------------------------------------------------------header---------------------------------------------------*/
+.body-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
 }
-.button {
-  cursor: pointer;
+.second-body-logo {
+  font-style: bolt;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--second-logo-color);
+}
+.third-body-logo {
+  font-style: bolt;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--logo-color);
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primary-text-color);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+.header-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--second-text-color);
+}
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--accent-color);
+}
+/*-------------------------------------------hero----------------------------------------------*/
+.main-section {
+  background-color: var(--second-accent-color);
+}
+.main-slogan {
+  font-weight: 900;
+  font-style: black;
+  font-size: 44px;
+  line-height: 1.36;
+  color: var(--header-color);
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primary-text-color);
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--second-text-color);
+}
+.aside-us {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--primary-text-color);
+}
+.aside-team {
+  background-color: var(--third-accent-color);
+}
+
+.team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--primary-text-color);
+}
+.content-team {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--second-text-color);
+}
+/*------------------------------------------footer----------------------------------------------*/
+
+.address {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--second-accent-color);
+}
+.aside-footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--second-logo-color);
+}
+
+.footer-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
 }
