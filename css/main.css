@@ -9,7 +9,7 @@
   --primary-text-color: #212121;
   --second-text-color: #757575;
 }
-.body {
+body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
 }
@@ -20,6 +20,19 @@
 
 .link {
   text-decoration: none;
+}
+/*------------СКРЫТЬ ТЕКСТ----------*/
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .main-btn {
@@ -32,14 +45,19 @@
 .btn:focus {
   color: var(--second-logo-color);
 }
+
 .btn-blue {
+  font-family: inherit;
   cursor: pointer;
-  background: var(--header-color);
+  background: var(--third-accent-color);
   border-radius: 4px;
 }
 .btn-blue:hover,
 .btn-blue:focus {
-  background: var(--accent-color);
+  background: #188ce8;
+}
+.active {
+  color: var(--accent-color);
 }
 
 /*-------------------------------------------------------header---------------------------------------------------*/
@@ -83,6 +101,10 @@
 .header-contact:focus {
   color: var(--accent-color);
 }
+
+.menu-header {
+}
+
 /*-------------------------------------------hero----------------------------------------------*/
 .main-section {
   background-color: var(--second-accent-color);
@@ -92,6 +114,9 @@
   font-style: black;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 6%;
   color: var(--header-color);
 }
 
@@ -146,7 +171,12 @@
 
 .address {
   font-family: "Roboto", sans-serif;
+  font-style: normal;
   background-color: var(--second-accent-color);
+}
+
+.footer-address {
+  font-style: inherit;
 }
 .aside-footer {
   font-weight: 400;
