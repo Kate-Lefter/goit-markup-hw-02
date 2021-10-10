@@ -35,27 +35,31 @@ body {
   margin: -1px;
 }
 
-.main-btn {
+.button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  text-align: center;
+}
+
+.primary {
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  background: var(--accent-color);
+  color: var(--header-color);
+}
+.secondary .btn {
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  background-color: var(--third-accent-color);
   color: var(--primary-text-color);
 }
 .btn:hover,
 .btn:focus {
+  background-color: #188ce8;
   color: var(--second-logo-color);
 }
 
-.btn-blue {
-  font-family: inherit;
-  cursor: pointer;
-  background: var(--third-accent-color);
-  border-radius: 4px;
-}
-.btn-blue:hover,
-.btn-blue:focus {
-  background: #188ce8;
-}
 .active {
   color: var(--accent-color);
 }
@@ -66,6 +70,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 .second-body-logo {
@@ -85,24 +90,28 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 .menu-link:hover,
 .menu-link:focus {
   color: var(--accent-color);
 }
+
+.list .link.current {
+  color: var(--accent-color);
+}
+
 .header-contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--second-text-color);
 }
 .header-contact:hover,
 .header-contact:focus {
   color: var(--accent-color);
-}
-
-.menu-header {
 }
 
 /*-------------------------------------------hero----------------------------------------------*/
@@ -115,15 +124,18 @@ body {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  text-transform: uppercase;
   vertical-align: top;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
   color: var(--header-color);
 }
 
 .about-title {
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
@@ -131,15 +143,18 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 .aside-us {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 .aside-team {
+  letter-spacing: 0.03em;
   background-color: var(--third-accent-color);
 }
 
@@ -159,12 +174,15 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
+  text-decoration: none;
   color: var(--primary-text-color);
 }
 .aside-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 /*------------------------------------------footer----------------------------------------------*/
@@ -172,6 +190,7 @@ body {
 .address {
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  letter-spacing: 0.03em;
   background-color: var(--second-accent-color);
 }
 
